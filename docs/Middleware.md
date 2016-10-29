@@ -406,10 +406,10 @@ configuration.  _(Note: This limitation, the need to manually create your `contr
 issues #219 and #221 are completed.)_
 
 A new option (since 0.8.4) is the addition of the `x-swagger-router-handle-subpaths` extension to the Swagger path
-component. By setting this property to `true`, it indicates to Swagger Router that it should match and route all 
-requests to not only the specified path, but also any undeclared subpaths requested that do not match an explicitly 
+component. By setting this property to `true`, it indicates to Swagger Router that it should match and route all
+requests to not only the specified path, but also any undeclared subpaths requested that do not match an explicitly
 defined path in the Swagger. While you cannot specify wildcards in Swagger, this would be the spiritual equivalent
-of wildcarding the end of the path something like `/pets/**`. For example, the following Swagger would cause 
+of wildcarding the end of the path something like `/pets/**`. For example, the following Swagger would cause
 Swagger Router to match and route `/pets`, `/pets/1`, or even `/pets/this/is/an/arbitrary/route` to the `Pets`
 controller:
 
@@ -530,6 +530,7 @@ suppose to return `application/x-yaml` but it returns `application/json`, it wil
 
 * **options:** `object` The middleware options
 * **options.validateResponse:** `[boolean=false]` Whether or not to validate responses
+* **options.responseValidatorHook:** `[function(err, req, res, next) {...}]` Optional callback function for response validation errors. Chain to `next(err)` to propogate the error or call `next()` to ignore the error.
 
 **Returns**
 
