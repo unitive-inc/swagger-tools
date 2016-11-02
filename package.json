@@ -1,5 +1,5 @@
 {
-  "name": "swagger-tools",
+  "name": "unitive-swagger-tools",
   "version": "0.10.1",
   "description": "Various tools for using and integrating with Swagger.",
   "main": "index.js",
@@ -12,13 +12,13 @@
     "url": "https://github.com/whitlockjc"
   },
   "bugs": {
-    "url": "https://github.com/apigee-127/swagger-tools/issues"
+    "url": "https://github.com/unitive-inc/swagger-tools/issues"
   },
-  "homepage": "https://github.com/apigee-127/swagger-tools",
+  "homepage": "https://github.com/unitive-inc/swagger-tools",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/apigee-127/swagger-tools.git"
+    "url": "git://github.com/unitive-inc/swagger-tools.git"
   },
   "keywords": [
     "api",
